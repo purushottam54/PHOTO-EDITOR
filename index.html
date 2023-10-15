@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <title>PHOTO EDITOR</title>
+    <link rel="shortcut icon" href="logo1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loder">
+        <h1>0%</h1>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark, navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="camera (1).png" width="30" height="30" class="d-inline-block align-top" alt="">
+            PHOTO EDIT
+        </a>
+    </nav>
+
+
+
+    <div id="main">
+        <div id="page1">
+            <h1>photo$ editor</h1>
+        </div>
+
+
+        <div id="page2">
+
+            <div class="wrapper">
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="container disable">
+                <h2>Easy Image Editor</h2>
+                <div class="wrapper">
+                    <div class="editor-panel">
+                        <div class="filter">
+                            <label class="title">Filters</label>
+                            <div class="options">
+                                <button id="brightness" class="active">Brightness</button>
+                                <button id="saturation">Saturation</button>
+                                <button id="inversion">Inversion</button>
+                                <button id="grayscale">Grayscale</button>
+                            </div>
+                            <div class="slider">
+                                <div class="filter-info">
+                                    <p class="name">Brighteness</p>
+                                    <p class="value">100%</p>
+                                </div>
+                                <input type="range" value="100" min="0" max="200">
+                            </div>
+                        </div>
+                        <div class="rotate">
+                            <label class="title">Rotate & Flip</label>
+                            <div class="options">
+                                <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                                <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                                <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                                <button id="vertical"><i class='bx bx-reflect-horizontal'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-img">
+                        <img src="image-placeholder.svg" alt="preview-img">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="reset-filter">Reset Filters</button>
+                    <div class="row">
+                        <input type="file" class="file-input" accept="image/*" hidden>
+                        <button class="choose-img">Choose Image</button>
+                        <button class="save-img">Save Image</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="page3">
+
+            <div class="wrapper">
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="container11">
+                <div class="box1">
+                    <h1>e</h1>
+                </div>
+                <div class="box2">
+                    <h1>d</h1>
+                </div>
+                <div class="box3">
+                    <h1>i</h1>
+                </div>
+                <div class="box4">
+                    <h1>t</h1>
+                </div>
+                <div class="box5">
+                    <h1>o</h1>
+                </div>
+                <div class="box6">
+                    <h1>r</h1>
+                </div>
+            </div>
+
+            <footer>
+                <small>
+                    Copyright © 2023 PHOTO EDITOR. All Rights Reserved.
+                </small>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
